@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="500.0" minWidth="650.0" prefHeight="500.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewController">
+   <children>
+      <MenuBar prefHeight="29.0" prefWidth="650.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Equipamento">
+            <items>
+              <MenuItem fx:id="menuRegistrar" mnemonicParsing="false" onAction="#onMenuRegistrarAction" text="Registrar" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TableView fx:id="table" layoutY="29.0" minWidth="650.0" prefHeight="469.0" prefWidth="650.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="89.0" text="id" />
+          <TableColumn fx:id="col_nome" prefWidth="192.0" text="Nome" />
+            <TableColumn fx:id="col_num" prefWidth="188.0" text="Numero de Serie" />
+            <TableColumn fx:id="col_fabricante" prefWidth="179.0" text="Fabricante" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
